@@ -1,9 +1,14 @@
+.wrapper {
+    
+}
 /*menu de navegacion*/
 .navigation-menu {
     position: fixed;
     top: 0px;
     z-index: 2;
     width: 100%;
+    background: transparent;
+    transition: background 1s;
 }
 .navbar-nav {
     text-align: center;
@@ -17,14 +22,15 @@ a#contact {
 }
 .navbar-dark .navbar-nav .active>.nav-link, .navbar-dark .navbar-nav .nav-link.active, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .show>.nav-link {
     color: #fff;
-    font-weight: 600;
+    opacity: 1;
 }
 .navbar-dark .navbar-nav .nav-link {
     color: #fff;
+    transition: font-weight 1s;
 }
 .navbar-dark .navbar-nav .nav-link:focus, .navbar-dark .navbar-nav .nav-link:hover {
     color: #fff;
-    font-weight: 600;
+    opacity: .8;
 }
 .nav-link .fab {
     font-size: 19px;
@@ -34,8 +40,20 @@ a#contact {
     bottom: 25px;
 }
 .nav-scroll {
-    background-color: #fff;
-    opacity: 1;
+    background: #01030482;
+}
+#logo-header-img {
+    width: 100px;
+}
+#travel-carousel-footer {
+    background: #01030482;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+    text-align: center;
+    z-index: 2;
+    padding: 15px 0;
 }
 
 /*slider portada*/
@@ -53,9 +71,20 @@ a#contact {
 
 /*Carousel de viajes*/
 #travel-carousel {
+    width: 100%;
+    height: 530px;
+    position: relative;
+    z-index: 1;
+}
+#travel-carousel-wrapper {
     width: 75%;
     margin: auto;
     position: relative;
+    top: -28px;
+    border: 1px solid #fff;
+    -webkit-box-shadow: -4px 4px 14px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: -4px 4px 14px -5px rgba(0,0,0,0.75);
+    box-shadow: -4px 4px 14px -5px rgba(0,0,0,0.75);
 }
 #header-travel-carousel {
     background-color: #103b48;
@@ -84,14 +113,188 @@ a#contact {
     color: #fff;
     font-size: 40px;
 }
-#footer-travel-carousel {
-    position: absolute;
+.travel-price {
+    font-size: 32px;
+    margin-bottom: 0;
+}
+
+
+/*Video*/
+
+#video {
+    position: relative;
+    top: -25px;
+    background: grey;
+    z-index: 0;
     width: 100%;
-    bottom: 0;
+}
+#video-text {
+    position: absolute;
+    z-index: 1;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    top: 35%;
+}
+#video-text .omtour-title {
+    font-size: 40px;
+}
+#video-footer {
+    position: absolute;
+    bottom: 30%;
     color: #fff;
     text-align: center;
 }
+#video-footer p{
+    position: relative;
+    width: 50%;
+    margin: 0 auto;
+    font-size: 17px;
+}
+
+/*tipos de viaje*/
+#tipos-de-viaje {
+    width: 100%;
+    height: 552px;
+    position: relative;
+    top: -25px;
+    z-index: 1;
+}
+#tipos-de-viaje-wrapper{
+    width: 75%;
+    height: 100%;
+    margin: auto;
+    position: relative;
+    top: -28px;
+    background-image: url('../img/marrueco.png');
+    background-color: #00000057; 
+    background-blend-mode: multiply;
+    border: 1px solid #fff;
+    -webkit-box-shadow: -4px 4px 14px -5px rgba(0,0,0,0.75);
+    -moz-box-shadow: -4px 4px 14px -5px rgba(0,0,0,0.75);
+    box-shadow: -4px 4px 14px -5px rgba(0,0,0,0.75);
+}
+#tipos-de-viaje-text {
+    text-align: center;
+    margin: 20px 0;
+}
+#tipos-de-viaje .omtour-title {
+    font-size: 40px;
+    color: #ffffff;
+}
+.trip-box {
+    max-height: 130px;
+    overflow: hidden;
+    position: relative;
+    transition: max-height 0.15s ease-out;
+}
+ .trip-box:nth-of-type(1){
+    background-color: #103b48;
+}
+ .trip-box:nth-of-type(2){
+    background-color: #2a6475;
+}
+ .trip-box:nth-of-type(3){
+    background-color: #447989
+}
+.trip-title h4 {
+    color: #ffffff;
+    text-align: center;
+    font-size: 25px;
+    margin: 20px 0 10px 0px;
+}
+.trip-logo {
+    text-align: center;
+    margin-bottom: 20px;
+}
+.trip-content p{
+    text-align: center;
+    color: #ffffff;
+    font-size: 14px;
+    padding: 0 25px;
+}
+.trip-button {
+    display: block;
+    text-decoration: none;
+    color: #ffffff;
+    border: 1px solid #fff;
+    border-radius: 10px;
+    padding: 5px 10px;
+    margin: 10px;
+}
+.trip-button:hover, .trip-button:active, .trip-button:focus{
+    text-decoration: none;
+    color: #ffffff;
+    opacity: .8;
+}
+.trip-footer img {
+    width: 100%;
+}
+
+.full-height {
+    max-height: 460px;
+    transition: max-height 0.25s ease-in;
+}
+
+
+/*contacto*/
+#contacto {
+    background-color: #dadada;
+    position: relative;
+    top: -52px;
+    height: 428px;
+    padding-top: 88px;
+}
+#header-contacto {
+    text-align: center;
+    color: rgba(93, 93, 93, 255);
+    font-size: 40px;
+    position: relative;
+}
+#header-contacto .omtour-title {
+    font-size: 40px;
+    margin-bottom: 75px;
+}
+.formulario input, .formulario input:focus, .formulario input:active {
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #434343;
+    border-radius: 0;
+    padding-left: 0;
+    outline: 0;
+    box-shadow: none;
+}
+.contacto-button{
+    background: transparent;
+    color: rgba(47, 47, 47, 255);
+    border: 1px solid #434343;
+    border-radius: 10px;
+    padding: 5px 97px;
+}
+.formulario .row:first-of-type{
+    margin-bottom: 50px;
+}
+
+/*pre-footer*/
+#pre-footer{
+    height: 329px;
+    background-image: url('../img/praga.png');
+    background-color: #00000057; 
+    background-blend-mode: multiply;
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+#pre-footer p {
+    font-size: 24px;
+}
 /*footer*/
+#footer .row {
+    justify-content: center;
+}
 section {
     padding: 60px 0;
 }
@@ -103,7 +306,8 @@ section .section-title {
     text-transform: uppercase;
 }
 #footer {
-    background: #007b5e !important;
+    background: #103b48 !important;
+    color: #ffffff;
 }
 #footer h5{
 	padding-left: 10px;
@@ -156,6 +360,26 @@ section .section-title {
 #footer ul.quick-links li:hover a i {
     font-weight: 700;
 }
+.elemento.medio {
+    width: 300px;
+    border-left: 1px solid #ffffff;
+    border-right: 1px solid #ffffff;
+    margin: 0 50px;
+    padding-top: 30px;
+}
+.elemento.medio ul {
+    list-style-type: none;
+    padding-left: 0;
+    text-align: center;
+}
+.elemento.medio ul li {
+    margin-bottom: 10px;
+}
+.elemento.medio .fa-whatsapp, .elemento.medio .fa-phone, .elemento.medio .fa-envelope {
+    margin-right: 30px;
+    font-size: 25px;
+    color: #fff;
+}  
 
 @media (max-width:767px){
 	#footer h5 {

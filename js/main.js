@@ -1,7 +1,6 @@
 jQuery(document).ready(function($){
-
     var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
-    if(width<1300) {
+    // if(width<1300) {
         $(window).scroll(function(){
             var height = $(window).scrollTop();
             if(height > 20) {
@@ -11,6 +10,12 @@ jQuery(document).ready(function($){
                 $( "#nav-menu" ).removeClass('nav-scroll');
             }
         });
-    }
+    // }
+
+    $(".trip-box").hover(function(){
+        $(this).addClass('full-height');
+    }, function(){
+        $(this).removeClass('full-height');
+    });
 
 });
