@@ -308,58 +308,16 @@ section .section-title {
 #footer {
     background: #103b48 !important;
     color: #ffffff;
+    font-size: 18px;
 }
-#footer h5{
-	padding-left: 10px;
-    border-left: 3px solid #eeeeee;
-    padding-bottom: 6px;
-    margin-bottom: 20px;
-    color:#ffffff;
-}
+
 #footer a {
     color: #ffffff;
     text-decoration: none !important;
     background-color: transparent;
     -webkit-text-decoration-skip: objects;
 }
-#footer ul.social li{
-	padding: 3px 0;
-}
-#footer ul.social li a i {
-    margin-right: 5px;
-	font-size:25px;
-	-webkit-transition: .5s all ease;
-	-moz-transition: .5s all ease;
-	transition: .5s all ease;
-}
-#footer ul.social li:hover a i {
-	font-size:30px;
-	margin-top:-10px;
-}
-#footer ul.social li a,
-#footer ul.quick-links li a{
-	color:#ffffff;
-}
-#footer ul.social li a:hover{
-	color:#eeeeee;
-}
-#footer ul.quick-links li{
-	padding: 3px 0;
-	-webkit-transition: .5s all ease;
-	-moz-transition: .5s all ease;
-	transition: .5s all ease;
-}
-#footer ul.quick-links li:hover{
-	padding: 3px 0;
-	margin-left:5px;
-	font-weight:700;
-}
-#footer ul.quick-links li a i{
-	margin-right: 5px;
-}
-#footer ul.quick-links li:hover a i {
-    font-weight: 700;
-}
+
 .elemento.medio {
     width: 300px;
     border-left: 1px solid #ffffff;
@@ -380,6 +338,23 @@ section .section-title {
     font-size: 25px;
     color: #fff;
 }  
+
+.elemento.rss {
+    padding-top: 30px;
+}
+.elemento .ul-rss {
+    list-style-type: none;
+    padding: 0;
+    width: 100%;
+    text-align: center;
+}
+.elemento .ul-rss li {
+    display: inline;
+    margin: 0 20px 0 0;
+}
+.elemento .ul-rss li .fab {
+    font-size: 27px;
+}
 
 @media (max-width:767px){
 	#footer h5 {
