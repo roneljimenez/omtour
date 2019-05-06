@@ -20,7 +20,7 @@
                         <div class="carousel-subtitle">
                             <span class="bold">15</span> Cupos disponibles
                         </div>
-                        <div class="carousel-text white">
+                        <div class="carousel-text white travels">
                             <div class="left-text">
                                 <h4 class="bold destiny-travel">Turquia y Grecia</h4>
                                 <p class="m-0 regular date-travel">10 al 20 de Agosto</p>
@@ -73,27 +73,27 @@
                         </div>
                         <div>Guia Coordinador Omtour 24/7 durante todo el viaje y guías locales</div>
                     </div>
-                    <div class="col"><div>
+                    <div class="col col-12"><div>
                             <img class="info-icons" src="img/plain-icon.svg" alt="">
                         </div>
                         <div>Pasajes aéreos internacionales</div></div>
-                    <div class="col"><div>
+                    <div class="col col-12"><div>
                             <img class="info-icons" src="img/hotel-icon.svg" alt="">
                         </div>
                         <div>Hoteles 4* Superior</div></div>
-                    <div class="col"><div>
+                    <div class="col col-12"><div>
                             <img class="info-icons" src="img/restaurant.svg" alt="">
                         </div>
                         <div>Media Pensión y una bebida incluida por comida</div></div>
-                    <div class="col"><div>
+                    <div class="col col-12"><div>
                             <img class="info-icons" src="img/bus.svg" alt="">
                         </div>
                         <div>Transporte privado en traslados y excursiones</div></div>
-                    <div class="col"><div>
+                    <div class="col col-12"><div>
                             <img class="info-icons" src="img/flag.svg" alt="">
                         </div>
                         <div>Principales excursiones</div></div>
-                    <div class="col"><div>
+                    <div class="col col-12"><div>
                             <img class="info-icons" src="img/bag.svg" alt="">
                         </div>
                         <div>Asistencia de Seguro de viaje</div></div>
@@ -107,7 +107,7 @@
                     </div>
                 </div>
                 <div class="row regular grey info-list-wrapper" data-aos="fade-left" data-aos-delay="200">
-                   <div class="col-5">
+                   <div class="col-md-5">
                        <a href="" class="btn btn-block btn-itinerario light">Revisa aqui el itinerario</a>
                    </div>
                 </div>

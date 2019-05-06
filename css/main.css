@@ -721,6 +721,35 @@ section .section-title {
         padding-top: 36px;
         border: 0 !important;
     }
+    #reserva {
+        height: 100%;
+        padding-bottom: 60px;
+    }
+    .carousel-subtitle{
+        width: 300px;
+        text-align: center;
+        font-size: 14px;
+    }
+    .carousel-subtitle span{
+        font-size: 25px;
+    }
+
+    .carousel-text.travels h4 {
+        font-size: 15px;
+    }
+    .carousel-text.travels p {
+        font-size: 12px;
+    }
+    .carousel-text {
+        flex-direction: column;
+    }
+    .carousel-text .left-text, .carousel-text .right-text {
+        width: 100%;
+        text-align: center !important;
+    }
+    .info-list-wrapper .col{
+        margin-bottom: 15px;
+    }
 }
 @media (max-width: 575.98px){
 

@@ -29,5 +29,5 @@
     <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-scroll/1.0.2/angular-scroll.js"></script>
     <script src="node_modules/aos/dist/aos.js"></script>
-    <script src="js/main.js?v=0.2"></script>
+    <script src="js/main.js?v=0.3"></script>
     <script src="angularJs/mainController.js?v=0.2"></script>
