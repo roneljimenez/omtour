@@ -24,42 +24,9 @@
 </head>
 <body ng-controller="mainController as main">
     <div class="wrapper">
-        <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-dark navigation-menu" id="nav-menu">
-            <div class="container-fluid">
-                <a class="navbar-brand col-sm-3 col-5" href="#">
-                    <img src="img/logo-omtour.svg" alt="Omtour-logo" id="logo-header-img-white" class="logo-white">
-                    <img src="img/logo-omtour-negro.svg" alt="Omtour-logo" id="logo-header-img-black" class="logo-black">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    <span><i class="fas fa-bars"></i></span>
-                </button>
-                <div class="collapse navbar-collapse col-sm-9 menu-font" id="navbarResponsive">
-                    <ul class="navbar-nav col-12">
-                        <li class="nav-item col">
-                            <a class="nav-link" href="#">Quienes Somos
-                                <span class="sr-only">(current)</span>
-                            </a>
-                        </li>
-                        <li class="nav-item col">
-                            <a class="nav-link" href="#travel-carousel" du-smooth-scroll du-scrollspy>Viajes Omtour</a>
-                        </li>
-                        <li class="nav-item col">
-                            <a class="nav-link" href="#tipos-de-viaje" du-smooth-scroll du-scrollspy>Tipos de Viajes</a>
-                        </li>
-                        <li class="nav-item col">
-                            <a id="contact" class="nav-link" href="#contacto" du-smooth-scroll du-scrollspy>Contacto</a>
-                        </li>
-                        <li class="nav-item col-12 col-sm-1">
-                            <a class="nav-link" href="#"><i class="fab fa-facebook-f"></i></a>
-                        </li>
-                        <li class="nav-item col-12 col-sm-1">
-                            <a class="nav-link" href="https://www.instagram.com/agenciaomtour/"><i class="fab fa-instagram"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        <?php 
+            include 'menu.php';
+        ?>
         <div id="banner-carousel">
             <div id="bannerCarousel" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
@@ -94,7 +61,7 @@
         <div id="travel-carousel" data-aos="fade-right">
             <div id="travel-carousel-wrapper">
                 <div id="header-travel-carousel">
-                    <img id="logo-header" src="/img/OMTOUR-travel-logo.png"></img>
+                    <img id="logo-header" src="img/OMTOUR-travel-logo.png"></img>
                     <h3 class="omtour-title regular">Próximas experiencias</h3>
                 </div>
                 <div id="travel-carousel-slider">
@@ -185,7 +152,7 @@
                                     <p><a href="#contacto" class="trip-button regular">Más Información</a></p>
                                 </div>
                                 <div class="trip-footer">
-                                    <img src="/img/Viajes-grupales.png" alt="">
+                                    <img src="img/Viajes-grupales.png" alt="">
                                 </div>
                             </div>
                             <div class="col-md-4 trip-box p-0">
@@ -200,7 +167,7 @@
                                     <p><a href="#contacto" class="trip-button regular">Más Información</a></p>
                                 </div>
                                 <div class="trip-footer">
-                                    <img src="/img/Viajes-grupales.png" alt="">
+                                    <img src="img/Viajes-grupales.png" alt="">
                                 </div>
                             </div>
                             <div class="col-md-4 trip-box p-0">
@@ -215,7 +182,7 @@
                                     <p><a href="#contacto" class="trip-button regular">Más Información</a></p>
                                 </div>
                                 <div class="trip-footer">
-                                    <img src="/img/Viajes-grupales.png" alt="">
+                                    <img src="img/Viajes-grupales.png" alt="">
                                 </div>
                             </div>
                         </div>
@@ -255,38 +222,8 @@
             <p class="light">Creamos las mejores experiencias de viajes para ti!</p>
         </div>
     </div>
-    <!-- Footer -->
-    <section id="footer" class="light">
-		<div class="container">
-			<div class="row">
-				<div class="elemento izquierdo">
-                    <img src="/img/logo-omtour.svg" alt="">
-                </div>
-                <div class="elemento medio">
-                    <ul>
-                        <li><i class="fab fa-whatsapp"></i> +569 660 99 836</li>
-                        <li><i class="fas fa-phone"></i> +569 660 99 836</li>
-                        <li><i class="far fa-envelope"></i>viajes@omtour.cl</li>
-                    </ul>
-                </div>
-                <div class="elemento rss">
-                    <p class="text-center">Redes Sociales</p>
-                    <ul class="ul-rss">
-                        <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                        <li><a href="https://www.instagram.com/agenciaomtour/"><i class="fab fa-instagram"></i></a></li>
-                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                    </ul>
-                </div>
-			</div>		
-		</div>
-	</section>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-scroll/1.0.2/angular-scroll.js"></script>
-    <script src="node_modules/aos/dist/aos.js"></script>
-    <script src="js/main.js?v=0.2"></script>
-    <script src="angularJs/mainController.js?v=0.2"></script>
+    <?php 
+        include 'footer.php';
+    ?>
 </body>
 </html>

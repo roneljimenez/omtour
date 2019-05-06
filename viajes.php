@@ -15,42 +15,9 @@
 </head>
 <body ng-controller="mainController as main">
     <div class="wrapper">
-        <!-- Navigation -->
-        <nav class="navbar navbar-expand-lg navbar-dark navigation-menu" id="nav-menu">
-            <div class="container-fluid">
-                <a class="navbar-brand col-sm-3 col-5" href="#">
-                    <img src="img/logo-omtour.svg" alt="Omtour-logo" id="logo-header-img-white" class="logo-white">
-                    <img src="img/logo-omtour-negro.svg" alt="Omtour-logo" id="logo-header-img-black" class="logo-black">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
-                    <span><i class="fas fa-bars"></i></span>
-                </button>
-                <div class="collapse navbar-collapse col-sm-9 menu-font" id="navbarResponsive">
-                    <ul class="navbar-nav col-12">
-                        <li class="nav-item col">
-                            <a class="nav-link" href="#">Quienes Somos
-                                <span class="sr-only">(current)</span>
-                            </a>
-                        </li>
-                        <li class="nav-item col">
-                            <a class="nav-link" href="#travel-carousel" du-smooth-scroll du-scrollspy>Viajes Omtour</a>
-                        </li>
-                        <li class="nav-item col">
-                            <a class="nav-link" href="#tipos-de-viaje" du-smooth-scroll du-scrollspy>Tipos de Viajes</a>
-                        </li>
-                        <li class="nav-item col">
-                            <a id="contact" class="nav-link" href="#contacto" du-smooth-scroll du-scrollspy>Contacto</a>
-                        </li>
-                        <li class="nav-item col-12 col-sm-1">
-                            <a class="nav-link" href="#"><i class="fab fa-facebook-f"></i></a>
-                        </li>
-                        <li class="nav-item col-12 col-sm-1">
-                            <a class="nav-link" href="#"><i class="fab fa-instagram"></i></a>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+        <?php 
+            include 'menu.php';
+        ?>
         <div id="banner-carousel">
             <div id="bannerCarousel" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
@@ -104,7 +71,7 @@
                 <div class="row" data-aos="fade-right" data-aos-delay="200">
                     <div class="col-12">
                         <div class="text-box grey regular">
-                            <img src="/img/info-icon.svg" alt=""><span>Info General</span>
+                            <img src="img/info-icon.svg" alt=""><span>Info General</span>
                         </div>
                         <div class="middle-border"></div>
                     </div>
@@ -112,39 +79,39 @@
                 <div class="row text-center regular grey info-list-wrapper" data-aos="fade-right" data-aos-delay="200">
                     <div class="col">
                         <div>
-                            <img class="info-icons" src="/img/brujula-icon.svg" alt="">
+                            <img class="info-icons" src="img/brujula-icon.svg" alt="">
                         </div>
                         <div>Guia Coordinador Omtour 24/7 durante todo el viaje y guías locales</div>
                     </div>
                     <div class="col"><div>
-                            <img class="info-icons" src="/img/plain-icon.svg" alt="">
+                            <img class="info-icons" src="img/plain-icon.svg" alt="">
                         </div>
                         <div>Pasajes aéreos internacionales</div></div>
                     <div class="col"><div>
-                            <img class="info-icons" src="/img/hotel-icon.svg" alt="">
+                            <img class="info-icons" src="img/hotel-icon.svg" alt="">
                         </div>
                         <div>Hoteles 4* Superior</div></div>
                     <div class="col"><div>
-                            <img class="info-icons" src="/img/restaurant.svg" alt="">
+                            <img class="info-icons" src="img/restaurant.svg" alt="">
                         </div>
                         <div>Media Pensión y una bebida incluida por comida</div></div>
                     <div class="col"><div>
-                            <img class="info-icons" src="/img/bus.svg" alt="">
+                            <img class="info-icons" src="img/bus.svg" alt="">
                         </div>
                         <div>Transporte privado en traslados y excursiones</div></div>
                     <div class="col"><div>
-                            <img class="info-icons" src="/img/flag.svg" alt="">
+                            <img class="info-icons" src="img/flag.svg" alt="">
                         </div>
                         <div>Principales excursiones</div></div>
                     <div class="col"><div>
-                            <img class="info-icons" src="/img/bag.svg" alt="">
+                            <img class="info-icons" src="img/bag.svg" alt="">
                         </div>
                         <div>Asistencia de Seguro de viaje</div></div>
                 </div>
                 <div class="row" data-aos="fade-left" data-aos-delay="200">
                     <div class="col-12">
                         <div class="text-box grey regular">
-                            <img src="/img/location-icon.svg" alt=""><span>Itinerario</span>
+                            <img src="img/location-icon.svg" alt=""><span>Itinerario</span>
                         </div>
                         <div class="middle-border"></div>
                     </div>
@@ -157,7 +124,7 @@
                 <div class="row" data-aos="fade-right" data-aos-delay="300">
                     <div class="col-12">
                         <div class="text-box grey regular">
-                            <img src="/img/creditcard-icon.svg" alt=""><span>Cómo pagar?</span>
+                            <img src="img/creditcard-icon.svg" alt=""><span>Cómo pagar?</span>
                         </div>
                         <div class="middle-border"></div>
                     </div>
@@ -174,7 +141,7 @@
                 <div class="row">
                     <div class="col-12">
                         <div class="text-box grey regular" data-aos="fade-left">
-                            <img src="/img/warning-icon.svg" alt=""><span>Importante</span>
+                            <img src="img/warning-icon.svg" alt=""><span>Importante</span>
                         </div>
                         <div class="middle-border"></div>
                     </div>
@@ -221,10 +188,12 @@
                     <div class="col">
                         <div class="regular grey reserva-title">Sí, quiero reservar</div>
                         <div class="buttons-button">
-                            <img class="buttons-button-img" src="/img/webpay.png" alt="">
+                            <!-- <img class="buttons-button-img" src="img/webpay.png" alt=""> -->
+                            <a mp-mode="dftl" href="https://www.mercadopago.com/mlc/checkout/pay?pref_id=433357739-7b765bf5-d1ab-4480-b44f-cb23ea8f5165" name="MP-payButton" class='blue-ar-l-rn-none'>Pagar</a>
                         </div>
                         <div class="reserva-text regular">
                             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Unde quae 
+                            
                         </div>
                     </div>
                 </div>
@@ -234,38 +203,8 @@
             <p class="light">Creamos las mejores experiencias de viajes para ti!</p>
         </div>
     </div>
-    <!-- Footer -->
-    <section id="footer" class="light">
-		<div class="container">
-			<div class="row">
-				<div class="elemento izquierdo">
-                    <img src="/img/logo-omtour.svg" alt="">
-                </div>
-                <div class="elemento medio">
-                    <ul>
-                        <li><i class="fab fa-whatsapp"></i> +569 660 99 836</li>
-                        <li><i class="fas fa-phone"></i> +569 660 99 836</li>
-                        <li><i class="far fa-envelope"></i>viajes@omtour.cl</li>
-                    </ul>
-                </div>
-                <div class="elemento rss">
-                    <p class="text-center">Redes Sociales</p>
-                    <ul class="ul-rss">
-                        <li><i class="fab fa-facebook-f"></i></li>
-                        <li><i class="fab fa-instagram"></i></li>
-                        <li><i class="fab fa-twitter"></i></li>
-                    </ul>
-                </div>
-			</div>		
-		</div>
-	</section>
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.7.8/angular.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/angular-scroll/1.0.2/angular-scroll.js"></script>
-    <script src="node_modules/aos/dist/aos.js"></script>
-    <script src="js/main.js?v=0.2"></script>
-    <script src="angularJs/mainController.js?v=0.2"></script>
+    <?php 
+        include 'footer.php';
+    ?>
 </body>
 </html>
