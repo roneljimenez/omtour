@@ -1,0 +1,19 @@
+#pago_exitoso {
+    height: 100%;
+}
+#pago_exitoso #footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.mensaje {
+    position: relative;
+    height: 300px;
+    padding: 30px 0;
+}
+
+.mensaje img {
+    width: 150px;
+    margin-bottom: 20px;
+}
