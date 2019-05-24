@@ -94,7 +94,7 @@ a#contact {
     display: block !important;
 }
 #travel-carousel-footer {
-    background: #01030482;
+    background: #010304d6;
     color: #fff;
     position: absolute;
     width: 100%;
@@ -104,6 +104,23 @@ a#contact {
     padding: 15px 0;
 }
 
+#travel-carousel-footer .row {
+    align-items: center;
+}
+.ciudad {
+    font-size: 17px;
+    text-transform: uppercase;
+}
+.hotel-wrapper{
+    border: 1px solid grey;
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+}
+#hoteles{
+    width: 75%;
+    margin: auto;
+}
 /*slider portada*/
 #banner-carousel{
     height: 100vh;
@@ -176,7 +193,7 @@ a#contact {
     letter-spacing: 1px;
 }
 .travel-price {
-    font-size: 32px;
+    font-size: 28px;
     margin-bottom: 0;
 }
 .cupos{
@@ -244,7 +261,7 @@ a#contact {
     margin: auto;
     position: relative;
     top: 0px;
-    background-image: url('../img/marrueco.png');
+    background-image: url('../img/Tipos-de-viajes.jpg');
     background-color: #00000057; 
     background-blend-mode: multiply;
     background-size: cover;
@@ -368,9 +385,6 @@ a#contact {
 /*pre-footer*/
 #pre-footer{
     height: 329px;
-    background-image: url('../img/praga.png');
-    background-color: #00000057; 
-    background-blend-mode: multiply;
     position: relative;
     width: 100%;
     display: flex;
@@ -378,8 +392,15 @@ a#contact {
     align-items: center;
     color: #ffffff;
 }
-#pre-footer p {
+#pre-footer h5 {
     font-size: 30px;
+}
+#pre-footer #carouselExperience {
+    width: 100%;
+    height: 100%;
+}
+#pre-footer img {
+    height: 329px;
 }
 
 /*footer*/
@@ -401,6 +422,7 @@ section .section-title {
     background: #103b48 !important;
     color: #ffffff;
     font-size: 18px;
+    padding: 60px 0;
 }
 
 #footer a {
@@ -534,7 +556,7 @@ section .section-title {
     margin: auto;
 }
 
-#prepararnos h3, #disfruta h3, #reserva h3 {
+#prepararnos h3, #disfruta h3, #reserva h3, #itinerario h3 {
     font-size: 35px;
     margin-bottom: 50px;
 }
@@ -580,16 +602,95 @@ section .section-title {
 }
 .buttons-button-img{
     margin: auto;
+    margin-bottom: 60px;
 }
 .reserva-text {
-    padding: 0 100px;
+    padding: 0 60px;
     font-size: 18px;
 }
 #click-aqui{
     position: relative;
     bottom: 40px;
 }
+#click-aqui a {
+    font-size: 20px;
+    transition: color 0.2s ease-in, color 0.2s ease-out;
+}
+#click-aqui a:hover, #click-aqui a:focus, #click-aqui a:active{
+    color: #000000;
+    text-decoration: none;
+}
+.webpay-img{
+    width: 100px;
+}
+.webpay-div {
+    margin-top: 85px;
+}
+.webpay-btn{
+    padding: 10px 20px;
+}
 /*******************fin de viajes****************/
+
+/*******************Inicio de Itinerario****************/
+#itinerario{
+    padding-top: 100px; 
+}
+.itinerario-img img{
+    width: 100%;
+}
+#accordion{
+    margin: 50px 0;
+    border-bottom: 1px solid #339999;
+    padding-bottom: 50px;
+}
+.card {
+    border: 0 !important;
+    border-radius: 0;
+}
+.card-header{
+    border: 0 !important;
+    background: none;
+}
+.card-body{
+    padding: 0 0px 0 75px;
+}
+#descarga-itinerario-wrapper{
+    margin-bottom: 50px;
+}
+.modal-body{
+    overflow-y: scroll;
+    max-height: 500px;
+    padding: 20px;
+}
+
+/*******************fin de viajes****************/
+
+/****************quienes somos **************/
+
+#quienes-somos{
+    background-image: url('../img/omtour-logo-quienessomos.png');
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 50px;
+}
+#quienes-somos .row img {
+    margin: auto;
+}
+.perfil-img {
+    width: 322px;
+}
+#perfil-wrapper{
+    width: 100%;
+    max-height: 450px;
+    margin: 30px 0;
+}
+#quienes-somos-text {
+    font-size: 19px;
+    margin-top: 30px;
+}
+
+
+/****************fin quienes somos **************/
 
 @media (max-width:767px){
 	#footer h5 {
@@ -645,7 +746,7 @@ section .section-title {
         border: 0;
     }
     .carousel-caption>h5 {
-        font-size: 27px;
+        font-size: 40px;
     }
     #bannerCarousel .carousel-item>img{
         height: 100vh;
@@ -653,7 +754,7 @@ section .section-title {
         overflow: hidden;
     }
     #travel-carousel {
-        height: 844px;
+        height: 748px;
     }
     #travel-carousel-wrapper {
         width: 100%;
@@ -681,6 +782,13 @@ section .section-title {
     }
     #video {
         top: 0;
+        height: 300px;
+        /*display: none;*/
+    }
+    .embed-responsive{
+        height: 100%;
+    }
+    #video-text{
         display: none;
     }
     #tipos-de-viaje{
@@ -693,7 +801,10 @@ section .section-title {
     }
     #contacto{
         top: 0;
-        padding-top: 70px;
+        padding-top: 30px;
+    }
+    .formulario input, .formulario input:focus, .formulario input:active{
+        margin-bottom: 10px;
     }
     #header-contacto .omtour-title{
         font-size: 36px;
@@ -720,6 +831,55 @@ section .section-title {
         margin: 0 50px;
         padding-top: 36px;
         border: 0 !important;
+    }
+    #reserva {
+        height: 100%;
+        padding-bottom: 60px;
+    }
+    .carousel-subtitle{
+        top: 64%;
+        width: 300px;
+        text-align: center;
+        font-size: 14px;
+    }
+    .carousel-subtitle span{
+        font-size: 25px;
+    }
+
+    .carousel-text.travels h4 {
+        font-size: 15px;
+    }
+    .carousel-text.travels p {
+        font-size: 12px;
+    }
+    .carousel-text {
+        flex-direction: column;
+    }
+    .carousel-text .left-text, .carousel-text .right-text {
+        width: 100%;
+        text-align: center !important;
+    }
+    .info-list-wrapper .col-md{
+        margin-bottom: 15px;
+    }
+    #hoteles {
+        width: 100%;
+    }
+    .hotel-wrapper{
+        margin: 20px 0;
+        padding: 20px 0;
+    }
+    .destiny-travel{
+        font-size: 18px;
+    }
+    .travel-price{
+        font-size: 23px;
+    }
+    .date-travel{
+        font-size: 12px;
+    }
+    .marruecos-text{
+        font-size: 35px !important;
     }
 }
 @media (max-width: 575.98px){

@@ -1,0 +1,30 @@
+.wsp-button{
+    position: fixed;
+    z-index: 3;
+    right: 52px;
+    bottom: 30px;
+    background-color: #25d366;
+    color: #fff;
+    padding: 9px 15px;
+    border-radius: 4px;
+    line-height: 1;
+    -webkit-transition: background-color .3s ease,-webkit-transform .4s ease-in-out;
+    transition: background-color .3s ease,-webkit-transform .4s ease-in-out;
+    transition: background-color .3s ease,transform .4s ease-in-out;
+    transition: background-color .3s ease,transform .4s ease-in-out,-webkit-transform .4s ease-in-out;
+    
+}
+.wsp-button:hover, .wsp-button:active, .wsp-button:focus{
+    color: #fff;
+    text-decoration: none;
+    background-color: #1da851;
+}
+@media (max-width:767px){
+    .wsp-button{
+        right: 10px;
+        padding: 13px 20px;
+    }
+    .wsp-button span{
+        display: none !important;
+    }
+}
