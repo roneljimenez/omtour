@@ -1,0 +1,1 @@
+<a class="wsp-button" href="https://api.whatsapp.com/send?phone=56966099836&text=Hola,%20tengo%20una%20consulta"><i class="fab fa-whatsapp"></i><span> Escríbenos al Whatsapp!</span></a>

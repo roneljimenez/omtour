@@ -1,6 +1,5 @@
 jQuery(document).ready(function($){
     var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
-    // if(width<1300) {
         $(window).scroll(function(){
             var height = $(window).scrollTop();
             if(height > 20) {
@@ -19,7 +18,6 @@ jQuery(document).ready(function($){
                 }
             }
         });
-    // }
 
     $(".trip-box").hover(function(){
         $(".trip-box").removeClass('full-height');
@@ -30,9 +28,6 @@ jQuery(document).ready(function($){
     });
 
     AOS.init({
-
-        
-      
         // Settings that can be overridden on per-element basis, by `data-aos-*` attributes:
         offset: 120, // offset (in px) from the original trigger point
         delay: 0, // values from 0 to 3000, with step 50ms
@@ -43,4 +38,4 @@ jQuery(document).ready(function($){
 });
 
 
-(function(){function $MPC_load(){window.$MPC_loaded !== true && (function(){var s = document.createElement("script");s.type = "text/javascript";s.async = true;s.src = document.location.protocol+"//secure.mlstatic.com/mptools/render.js";var x = document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s, x);window.$MPC_loaded = true;})();}window.$MPC_loaded !== true ? (window.attachEvent ?window.attachEvent('onload', $MPC_load) : window.addEventListener('load', $MPC_load, false)) : null;})();
+/* (function(){function $MPC_load(){window.$MPC_loaded !== true && (function(){var s = document.createElement("script");s.type = "text/javascript";s.async = true;s.src = document.location.protocol+"//secure.mlstatic.com/mptools/render.js";var x = document.getElementsByTagName('script')[0];x.parentNode.insertBefore(s, x);window.$MPC_loaded = true;})();}window.$MPC_loaded !== true ? (window.attachEvent ?window.attachEvent('onload', $MPC_load) : window.addEventListener('load', $MPC_load, false)) : null;})(); */

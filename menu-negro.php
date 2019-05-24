@@ -1,8 +1,18 @@
+<style>
+    .nav-link{
+        color: #000 !important;
+    }
+    #logo-header-img-black{
+        display: block !important;
+    }
+    #navbarResponsive{
+        bottom: 0px !important;
+    }
+</style>
 <!-- Navigation -->
 <nav class="navbar navbar-expand-lg navbar-dark navigation-menu" id="nav-menu">
     <div class="container-fluid">
         <a class="navbar-brand col-sm-3 col-5" href="index.php">
-            <img src="img/logo-omtour.svg" alt="Omtour-logo" id="logo-header-img-white" class="logo-white">
             <img src="img/logo-omtour-negro.svg" alt="Omtour-logo" id="logo-header-img-black" class="logo-black">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,7 +35,7 @@
                     <a id="contact" class="nav-link" href="index.php#contacto" du-smooth-scroll du-scrollspy>Contacto</a>
                 </li>
                 <li class="nav-item col-12 col-sm-1">
-                    <a class="nav-link" href="https://www.facebook.com/agenciaomtour"><i class="fab fa-facebook-f"></i></a>
+                    <a class="nav-link" href="#"><i class="fab fa-facebook-f"></i></a>
                 </li>
                 <li class="nav-item col-12 col-sm-1">
                     <a class="nav-link" href="https://www.instagram.com/agenciaomtour/"><i class="fab fa-instagram"></i></a>
